@@ -73,19 +73,20 @@ public class AthenaDatabase extends Database {
         // References:
         // https://docs.aws.amazon.com/athena/latest/ug/create-table.html
         // https://aws.amazon.com/blogs/big-data/amazon-emr-supports-apache-hive-acid-transactions/ 
-        return "CREATE EXTERNAL TABLE " + table.getSchema().getName() + "." + table.getName() + " (\n" +
+        return "CREATE TABLE IF NOT EXISTS " + table.getSchema().getName() + "." + table.getName() + " (\n" +
                 "    installed_rank INT,\n" +
-                "    version VARCHAR(50),\n" +
-                "    description VARCHAR(200),\n" +
-                "    type VARCHAR(20),\n" +
-                "    script VARCHAR(1000),\n" +
-                "    checksum INTEGER,\n" +
-                "    installed_by VARCHAR(100),\n" +
+                "    version STRING,\n" +
+                "    description STRING,\n" +
+                "    type STRING,\n" +
+                "    script STRING,\n" +
+                "    checksum INT,\n" +
+                "    installed_by STRING,\n" +
                 "    installed_on TIMESTAMP,\n" +
-                "    execution_time INTEGER,\n" +
+                "    execution_time INT,\n" +
                 "    success BOOLEAN\n" +
                 ")\n" +
                 "LOCATION 's3://flyway-gpsa-development/'\n" +
+                "TBLPROPERTIES ('table_type'='iceberg','format'='parquet')\n" +
                 (baseline ? getBaselineStatement(table) + ";\n" : "");
     }
     

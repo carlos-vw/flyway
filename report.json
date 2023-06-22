@@ -637,6 +637,124 @@
       "operation": "migrate",
       "exception": null,
       "licenseFailed": false
+    },
+    {
+      "schemaVersion": "2",
+      "schemaName": "flyway",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "1",
+          "rawVersion": "1",
+          "description": "Create person table",
+          "type": "SQL",
+          "installedOnUTC": "",
+          "state": "Success",
+          "undoable": "No",
+          "filepath": "/Users/VWILYVN/Workspace/flyway/migrations/V1__Create_person_table.sql",
+          "undoFilepath": "",
+          "installedBy": "ASIAVID3W3LWMO2WMPNT",
+          "executionTime": 3565
+        },
+        {
+          "category": "Versioned",
+          "version": "2",
+          "rawVersion": "2",
+          "description": "Add people",
+          "type": "SQL",
+          "installedOnUTC": "",
+          "state": "Success",
+          "undoable": "No",
+          "filepath": "/Users/VWILYVN/Workspace/flyway/migrations/V2__Add_people.sql",
+          "undoFilepath": "",
+          "installedBy": "ASIAVID3W3LWMO2WMPNT",
+          "executionTime": 6404
+        }
+      ],
+      "flywayVersion": "9.20.0",
+      "database": "AwsDataCatalog",
+      "allSchemasEmpty": false,
+      "timestamp": "2023-06-22T17:24:02.105163",
+      "operation": "info",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": null,
+      "targetSchemaVersion": "2",
+      "schemaName": "flyway",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "1",
+          "description": "Create person table",
+          "type": "SQL",
+          "filepath": "/Users/VWILYVN/Workspace/flyway/migrations/V1__Create_person_table.sql",
+          "executionTime": 4012
+        },
+        {
+          "category": "Versioned",
+          "version": "2",
+          "description": "Add people",
+          "type": "SQL",
+          "filepath": "/Users/VWILYVN/Workspace/flyway/migrations/V2__Add_people.sql",
+          "executionTime": 21453
+        }
+      ],
+      "migrationsExecuted": 2,
+      "success": true,
+      "flywayVersion": "9.20.0",
+      "database": "AwsDataCatalog",
+      "warnings": [],
+      "timestamp": "2023-06-22T17:48:37.033201",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "2",
+      "targetSchemaVersion": null,
+      "schemaName": "flyway",
+      "migrations": [],
+      "migrationsExecuted": 0,
+      "success": true,
+      "flywayVersion": "9.20.0",
+      "database": "AwsDataCatalog",
+      "warnings": [],
+      "timestamp": "2023-06-22T17:55:29.480586",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "2",
+      "targetSchemaVersion": null,
+      "schemaName": "flyway",
+      "migrations": [],
+      "migrationsExecuted": 0,
+      "success": true,
+      "flywayVersion": "9.20.0",
+      "database": "AwsDataCatalog",
+      "warnings": [],
+      "timestamp": "2023-06-22T17:58:04.966416",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "2",
+      "targetSchemaVersion": null,
+      "schemaName": "flyway",
+      "migrations": [],
+      "migrationsExecuted": 0,
+      "success": true,
+      "flywayVersion": "9.20.0",
+      "database": "AwsDataCatalog",
+      "warnings": [],
+      "timestamp": "2023-06-22T18:00:08.261712",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
     }
   ]
 }
