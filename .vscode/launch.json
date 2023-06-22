@@ -1,0 +1,40 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "flyway info",
+            "request": "launch",
+            "mainClass": "org.flywaydb.commandline.Main",
+            "projectName": "flyway-commandline",
+            "args": "info -X -configFiles=flyway-commandline/src/main/assembly/flyway.conf"
+        },
+        {
+            "type": "java",
+            "name": "flyway migrate",
+            "request": "launch",
+            "mainClass": "org.flywaydb.commandline.Main",
+            "projectName": "flyway-commandline",
+            "args": "migrate -X -configFiles=flyway-commandline/src/main/assembly/flyway.conf"
+        },
+        {
+            "type": "java",
+            "name": "flyway repair",
+            "request": "launch",
+            "mainClass": "org.flywaydb.commandline.Main",
+            "projectName": "flyway-commandline",
+            "args": "repair -X -configFiles=flyway-commandline/src/main/assembly/flyway.conf"
+        },
+        {
+            "type": "java",
+            "name": "flyway clean",
+            "request": "launch",
+            "mainClass": "org.flywaydb.commandline.Main",
+            "projectName": "flyway-commandline",
+            "args": "clean -X -configFiles=flyway-commandline/src/main/assembly/flyway.conf"
+        }
+    ]
+}

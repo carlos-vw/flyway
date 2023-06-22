@@ -17,6 +17,7 @@ package org.flywaydb.core.internal.logging.log4j2;
 
 import org.flywaydb.core.api.logging.Log;
 import org.flywaydb.core.api.logging.LogCreator;
+import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 
 public class Log4j2LogCreator implements LogCreator {

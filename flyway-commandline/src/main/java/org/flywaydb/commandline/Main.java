@@ -177,6 +177,7 @@ public class Main {
                 LOG.error(getMessagesFromException(e));
             }
         }
+        System.out.println(e.getMessage());
         flushLog(commandLineArguments);
     }
 
