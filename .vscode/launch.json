@@ -35,6 +35,30 @@
             "mainClass": "org.flywaydb.commandline.Main",
             "projectName": "flyway-commandline",
             "args": "clean -X -configFiles=flyway-commandline/src/main/assembly/flyway.conf"
+        },
+        {
+            "type": "java",
+            "name": "flyway baseline",
+            "request": "launch",
+            "mainClass": "org.flywaydb.commandline.Main",
+            "projectName": "flyway-commandline",
+            "args": "baseline -X -configFiles=flyway-commandline/src/main/assembly/flyway.conf"
+        },
+        {
+            "type": "java",
+            "name": "flyway undo",
+            "request": "launch",
+            "mainClass": "org.flywaydb.commandline.Main",
+            "projectName": "flyway-commandline",
+            "args": "undo -X -configFiles=flyway-commandline/src/main/assembly/flyway.conf"
+        },
+        {
+            "type": "java",
+            "name": "flyway validate",
+            "request": "launch",
+            "mainClass": "org.flywaydb.commandline.Main",
+            "projectName": "flyway-commandline",
+            "args": "validate -X -configFiles=flyway-commandline/src/main/assembly/flyway.conf"
         }
     ]
 }
