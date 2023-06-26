@@ -46,12 +46,12 @@ public class AthenaSchema extends Schema {
 
     @Override
     protected void doCreate() throws SQLException {
-        jdbcTemplate.executeStatement("CREATE SCHEMA " + database.quote(name));
+        jdbcTemplate.executeStatement("CREATE SCHEMA " + name);
     }
 
     @Override
     protected void doDrop() throws SQLException {
-        jdbcTemplate.executeStatement("DROP SCHEMA " + database.quote(name));
+        jdbcTemplate.executeStatement("DROP SCHEMA " + name);
     }
 
     @Override
